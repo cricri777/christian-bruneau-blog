@@ -1,0 +1,36 @@
+baseURL = 'https://cricri777.github.io/christian-bruneau-blog/'
+languageCode = 'ca-FR'
+title = 'Christian Bruneau'
+theme = 'etch'
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+    description = "Blog de Christian Bruneau"
+    copyright = "Copyright © 2024 Christian Bruneau"
+    dark = "auto"
+    highlight = true
+
+
+[menu]
+    [[menu.main]]
+        identifier = "articles"
+        name = "articles"
+        title = "articles"
+        url = "/"
+        weight = 10
+
+    [[menu.main]]
+        identifier = "à propos"
+        name = "à propos"
+        title = "à propos"
+        url = "/about/"
+        weight = 20
+
+[permalinks]
+    posts = "/:title/"
+
+[markup.goldmark.renderer]
+    # Allows HTML in Markdown
+    unsafe = true
